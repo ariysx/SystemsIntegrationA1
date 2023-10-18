@@ -2,7 +2,6 @@ import random
 import sys
 import DNSStarter as dns
 import socket
-import ipaddress
 import re
 
 UDP_IP = "google-public-dns-a.google.com"
@@ -28,7 +27,7 @@ def dotted(d: list) -> str:
 
 # convert list of integers to IPv6 address
 def parse_ipv6(ipv6: list) -> str:
-    return ipaddress.IPv6Address(bytes(ipv6)).compressed
+    return socket.inet_ntop(socket.AF_INET6, bytes(ipv6))
 
 
 # lookup function to send DNS queries and print responses

@@ -47,6 +47,9 @@ support.dnsimple.com has an IPv6 address of 2a05:d014:58f:6200::64
 support.dnsimple.com has an IPv6 address of 2a05:d014:275:cb02::c8
 ```
 
+## Troubleshooting
+- Make sure the internet connection is working, i.e. connection not blocking the request
+
 ## Marking Criteria
 
 - [x] It should accept domains passed to it by the user in the form of a command line argument
